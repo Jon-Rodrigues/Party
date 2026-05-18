@@ -18,8 +18,7 @@ h1 {
 
     .container {
         display: flex;
-        justify-content: center; /* horizontal */
-        height: 100vh;
+        justify-content: center;
     }
 
     .textoVa{

@@ -1,0 +1,147 @@
+body {
+  font-family: "Gloria Hallelujah", cursive;
+  margin: 0;
+  padding: 10px;
+  background: #e1e1dd;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+/* Ajuste para telas pequenas (celular) */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center; /* horizontal */
+        align-items: center;     /* vertical */
+        height: 100vh;
+    }
+
+    .textoVa{
+        font-size: 120px;
+        color: transparent;
+        -webkit-text-stroke: 3px #403e3e;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-40%, -50%);
+        rotate: -0deg;
+    }
+
+    #horaTexto{
+       transform: translate(0px, 200px);
+        
+    }
+
+    #daTexto{
+        transform: translate(160px, -40px);
+    }
+
+    #festaTexto{
+        transform: translate(10px, -250px);
+        rotate: -8deg;
+    }
+
+    #bolo {
+        width: 300px;
+        transform: translate(0px, -108px);
+        filter: brightness(1.1) contrast(1.2);
+    }
+
+    #bolo2 {
+        width: 300px;
+        transform: translate(-30px, -80px);
+        filter: brightness(1.1) contrast(1.2);
+    }
+
+    .imgBolo{
+        position: absolute;
+        transform: translate(-80px, -30px);
+        overflow: hidden;
+        width: 200px;
+        height: 113px;
+        mix-blend-mode: multiply;
+    }
+
+    .imgVela1,.imgVela3{
+        position: absolute;
+        overflow: hidden;
+        width: 20px;
+        height: 29px;
+        animation: chama 3s infinite alternate;
+    }
+
+    .imgVela2 {
+        position: absolute;
+        overflow: hidden;
+        width: 20px;
+        height: 29px;
+        animation: chama2 4s infinite alternate;
+    }
+
+    .vela1{
+        position: absolute;
+        transform: translate(-145px, -110px);
+        mix-blend-mode: multiply;
+    }
+
+    .vela2{
+        position: absolute;
+        transform: translate(-100px, -110px);
+        mix-blend-mode: multiply;
+    }
+
+    .vela3{
+        position: absolute;
+        transform: translate(-62px, -115px);
+        mix-blend-mode: multiply;
+    }
+
+    @keyframes chama {
+
+    0% {
+        transform: scale(0.9) rotate(-2deg);
+    }
+
+    50% {
+        transform: scale(1.05, 0.95) rotate(20deg);
+    }
+
+    100% {
+        transform: scale(0.98, 1.02) rotate(-1deg);
+    }
+    }
+
+    @keyframes chama2 {
+
+    0% {
+        transform: scale(1) rotate(2deg);
+    }
+
+    50% {
+        transform: scale(1.05, 1.15) rotate(-20deg);
+    }
+
+    100% {
+        transform: scale(0.98, 1.02) rotate(-1deg);
+    }
+    }
+
+
+    .fotojk{
+        position: absolute;
+        transform: translate(0px, 500px);
+        overflow: hidden;
+        width: 55%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    
+}

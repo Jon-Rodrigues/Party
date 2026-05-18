@@ -4,6 +4,7 @@ body {
   padding: 10px;
   background: #e1e1dd;
   overflow: hidden;
+  touch-action: manipulation;
 }
 
 h1 {

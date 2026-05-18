@@ -6,12 +6,7 @@ body {
   overflow: hidden;
 }
 
-h1 {
-  font-size: 24px;
-}
 
-/* Ajuste para telas pequenas (celular) */
-@media (max-width: 600px) {
     h1 {
         font-size: 20px;
     }
@@ -144,4 +139,3 @@ h1 {
     }
 
     
-}

@@ -4,6 +4,7 @@ body {
   padding: 10px;
   background: #e1e1dd;
   overflow: hidden;
+  touch-action: manipulation;
 }
 
 h1 {
@@ -11,20 +12,19 @@ h1 {
 }
 
 /* Ajuste para telas pequenas (celular) */
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
     h1 {
         font-size: 20px;
     }
 
     .container {
         display: flex;
-        justify-content: center; /* horizontal */
-        align-items: center;     /* vertical */
-        height: 100vh;
+        justify-content: center;
+        background: red;
     }
 
     .textoVa{
-        font-size: 120px;
+        font-size: 100px;
         color: transparent;
         -webkit-text-stroke: 3px #403e3e;
         position: absolute;
@@ -35,16 +35,16 @@ h1 {
     }
 
     #horaTexto{
-       transform: translate(0px, 200px);
+       transform: translate(0px, 100px);
         
     }
 
     #daTexto{
-        transform: translate(160px, -40px);
+        transform: translate(160px, -100px);
     }
 
     #festaTexto{
-        transform: translate(10px, -250px);
+        transform: translate(10px, -280px);
         rotate: -8deg;
     }
 
@@ -62,7 +62,7 @@ h1 {
 
     .imgBolo{
         position: absolute;
-        transform: translate(-80px, -30px);
+        transform: translate(-80px, 260px);
         overflow: hidden;
         width: 200px;
         height: 113px;
@@ -87,19 +87,19 @@ h1 {
 
     .vela1{
         position: absolute;
-        transform: translate(-145px, -110px);
+        transform: translate(-145px, 238px);
         mix-blend-mode: multiply;
     }
 
     .vela2{
         position: absolute;
-        transform: translate(-100px, -110px);
+        transform: translate(-100px, 235px);
         mix-blend-mode: multiply;
     }
 
     .vela3{
         position: absolute;
-        transform: translate(-62px, -115px);
+        transform: translate(-62px, 235px);
         mix-blend-mode: multiply;
     }
 
@@ -135,13 +135,18 @@ h1 {
 
 
     .fotojk{
-        position: absolute;
-        transform: translate(0px, 500px);
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
         overflow: hidden;
-        width: 55%;
+        width: 100%;
         height: 100%;
         z-index: -1;
     }
 
-    
+    .foto{
+        scale: 105%;
+        transform: translate(5%, 0px);
+    }
+
 }
